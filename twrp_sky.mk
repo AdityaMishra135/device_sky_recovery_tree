@@ -35,6 +35,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
-PRODUCT_BRAND := Redmi 12 5G
+PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := sm4450
 PRODUCT_MANUFACTURER := Xiaomi
