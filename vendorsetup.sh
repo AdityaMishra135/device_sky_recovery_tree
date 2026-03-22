@@ -20,7 +20,6 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-        export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v30.6.zip
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
@@ -53,6 +52,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES="0"
 	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR="1"
 	export OF_DISABLE_MIUI_OTA_BY_DEFAULT="0"
+	export FOX_USE_SPECIFIC_MAGISK_ZIP="$(DEVICE_PATH)/prebuilt/Magisk-v30.6.zip"
+
 
 	export OF_NO_MIUI_PATCH_WARNING="1"
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
