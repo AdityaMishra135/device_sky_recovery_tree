@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 #
 FDEVICE="sky"
-DEVICE_PATH := device/xiaomi/$FDEVICE
 
 #set -o xtrace
 fox_get_target_device() {
@@ -53,8 +52,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES="0"
 	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR="1"
 	export OF_DISABLE_MIUI_OTA_BY_DEFAULT="0"
-	export FOX_USE_SPECIFIC_MAGISK_ZIP="$(DEVICE_PATH)/prebuilt/Magisk-v30.6.zip"
-
+	export FOX_USE_SPECIFIC_MAGISK_ZIP="device/xiaomi/sky/prebuilt/Magisk-v30.6.zip"
 
 	export OF_NO_MIUI_PATCH_WARNING="1"
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
