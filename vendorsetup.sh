@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: GPL-3.0-only
 #
 FDEVICE="sky"
+DEVICE_PATH := device/xiaomi/$FDEVICE
 
 #set -o xtrace
 fox_get_target_device() {
