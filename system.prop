@@ -1,18 +1,19 @@
-ro.product.vendor.marketname=Redmi 12 5G
-ro.product.board=sky
-ro.board.platform=sm4450
-sys.usb.controller=a600000.dwc3
-sys.usb.rndis.func.name=rndis_bam
-sys.usb.rmnet.func.name=rmnet_bam
-persist.sys.isUsbOtgEnabled=true
-vendor.gatekeeper.disable_spu=true
-ro.boot.dynamic_partitions=true
-ro.adb.secure=0
-fbe.metadata.wrappedkey=true
-ro.crypto.volume.filenames_mode=aes-256-cts
-vendor.usb.use_ffs_mtp=1
+# Battery Property
+ro.charger.enable_suspend=1
+
+# Storage
 external_storage.projid.enabled=1
 external_storage.casefold.enabled=1
 external_storage.sdcardfs.enabled=0
-# FUSE passthrough
-persist.sys.fuse.passthrough.enable=true
+
+# Crypto
+ro.crypto.allow_encrypt_override=true
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+# USB Config
+vendor.usb.use_ffs_mtp=1
