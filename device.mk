@@ -68,10 +68,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc
 
 # Set GRF/Vendor freeze properties
-BOARD_SHIPPING_API_LEVEL := 31
-BOARD_API_LEVEL := 31
-SHIPPING_API_LEVEL := 31
-PRODUCT_SHIPPING_API_LEVEL := 31
 
 #Support to compile recovery without msm headers
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
